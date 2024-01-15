@@ -152,7 +152,7 @@ class PanelInputScreen extends JPanel implements  ActionListener{
     public void showNASAImage(){
         String imgUrl ="";
         String date = inputDate.getText();
-        String apiKey = "to5lfkxJTKtyh5gaGFXxAOfpo1I72rp6EpFN1AxP";
+        String apiKey = "Enter your own nasa API Key";
         try {
             URL url = new URL("https://api.nasa.gov/planetary/apod?api_key=" + apiKey + "&date=" + date);
             HttpURLConnection apiNasaConnection = (HttpURLConnection) url.openConnection();
